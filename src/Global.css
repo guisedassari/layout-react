@@ -8,7 +8,7 @@ html, body, #root, p {
    text-rendering: optimizeLegibility !important;
    -webkit-font-smoothing: antialiased !important; 
    height: 100%;
-   
+   background: #f2f2f2;
 }
 
 .main-header {
