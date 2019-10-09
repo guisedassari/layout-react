@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import './index.css';
+import Post from './post';
+
 class PostList extends Component {
    state = {
       posts: [
@@ -29,13 +32,14 @@ class PostList extends Component {
       ]
    };
    render() {
+      const posts = this.state;
       return (
          <div className='container'>
-            <ul className='post-list'>
-               <li className='post-item'>Teste</li>
-               <li className='post-item'>Teste</li>
-               <li className='post-item'>Teste</li>
-            </ul>
+            <div className='post-list'>
+               posts.map(post => {
+                  console.log(post.id)
+               })
+            </div>
          </div>
       );
    }
